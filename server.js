@@ -24,6 +24,7 @@ app.post("/api/makePost", (req, res) => {
   const Post = post.create({
     title: req.body.title,
     body: req.body.body,
+    imageUrl: req.body.imageUrl,
   });
 
   if (Post) {
